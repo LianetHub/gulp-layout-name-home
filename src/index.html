@@ -1,100 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
     @@include('html/_head.html', {})
-    <body class="lock-menu">
+    <body>
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
-                <section class="promo">
+                <section class="hero">
                     <div class="container">
-                        <div class="promo__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__offer">
-                                        <div class="promo__label">Специальное предложение</div>
-                                        <h1 class="promo__title">Скидки 20% на&nbsp;все модели SRM-B-K</h1>
-                                        <p class="promo__description">Текстовая зона нужна для SEO. Здесь краткий небольшой текст о предлагаемом оборудовании.</p>
-                                        <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее об акции</a>
-                                    </div>
-                                    <div class="promo__image">
-                                        <img src="@img/promo-product.png" alt="Фото товара">
-                                    </div>
+                        <div class="hero__offer">
+                            <div class="hero__features">
+                                <div class="hero__feature">Эстетика дерева</div>
+                                <div class="hero__feature">Искусство формы</div>
+                            </div>
+                            <h1 class="hero__title">Мебель, рожденная природой и&nbsp;мастерством человека</h1>
+                            <div class="hero__footer">
+                                <div class="hero__btns">
+                                    <a href="" class="hero__btn btn btn-primary">Смотреть каталог</a>
+                                    <a href="" class="hero__btn btn btn-light">Рассчитать заказ</a>
                                 </div>
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__offer">
-                                        <div class="promo__label">Каталог электротехники</div>
-                                        <div class="promo__title">Устройства плавного пуска и частотные преобразователи</div>
-                                        <p class="promo__description">Широкий выбор оборудования для автоматизации. Решения для промышленности, энергетики и судостроения.</p>
-                                        <a href="" class="promo__btn btn btn-primary btn-lg">Перейти в каталог</a>
+                                <div class="hero__production">
+                                    <div class="hero__production-icon">
+                                        <img src="@img/icons/location.svg" alt="Иконка">
                                     </div>
-                                    <div class="promo__image">
-                                        <img src="@img/promo-product.png" alt="Каталог оборудования">
-                                    </div>
-                                </div>
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__offer">
-                                        <div class="promo__label">Наши услуги</div>
-                                        <div class="promo__title">Подбор, настройка и сопровождение</div>
-                                        <p class="promo__description">Поможем выбрать оборудование под ваши задачи, выполним пусконаладку и обеспечим техническую поддержку.</p>
-                                        <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее об услугах</a>
-                                    </div>
-                                    <div class="promo__image">
-                                        <img src="@img/promo-product.png" alt="Иконка услуг">
-                                    </div>
-                                </div>
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__offer">
-                                        <div class="promo__label">Надежность и качество</div>
-                                        <div class="promo__title">Гарантия до 3 лет на оборудование</div>
-                                        <p class="promo__description">Вся продукция проходит тщательное тестирование и сертификацию. Устройства NEWINEX работают на ведущих предприятиях страны.</p>
-                                        <a href="" class="promo__btn btn btn-primary btn-lg">Узнать о гарантии</a>
-                                    </div>
-                                    <div class="promo__image">
-                                        <img src="@img/promo-product.png" alt="Гарантия и сертификаты">
-                                    </div>
-                                </div>
-                                <div class="promo__slide swiper-slide">
-                                    <div class="promo__offer">
-                                        <div class="promo__label">Компания NEWINEX</div>
-                                        <div class="promo__title">Современные решения для автоматизации</div>
-                                        <p class="promo__description">Мы разрабатываем и поставляем оборудование для промышленных систем управления. Более 6 лет на рынке и десятки успешных проектов.</p>
-                                        <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее о компании</a>
-                                    </div>
-                                    <div class="promo__image">
-                                        <img src="@img/promo-product.png" alt="О компании NEWINEX">
-                                    </div>
+                                    <div class="hero__production-text">Производство в&nbsp;Санкт-Петербурге</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="promo__bottom">
-                            <button type="button" class="swiper-button-prev promo__prev icon-prev"></button>
-                            <div class="promo__pagination swiper-pagination"></div>
-                            <button type="button" class="swiper-button-next promo__next icon-next"></button>
+                    </div>
+                </section>
+
+                <section class="categories">
+                    <div class="container">
+                        <div class="row">
+                            @@loop('./html/templates/_category-card.html', './html/json/categories.json')
                         </div>
                     </div>
                 </section>
+
                 <section class="catalog">
                     <div class="container">
-                        <h2 class="catalog__title title">Каталог электротехники</h2>
-                        <div class="catalog__body">
-                            <div class="row">
-                                @@loop('./html/templates/_catalog-card.html', './html/json/catalog.json')
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="catalog__header">
+                                    <h2 class="catalog__title title">Каталог мебели</h2>
+                                    <span class="catalog__logo">NAMI HOME</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="catalog__footer seo-text">
-                            <p>Текстовая зона нужна для SEO. Здесь краткий небольшой текст о предлагаемом оборудовании. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <div class="catalog__body">
+                            <div class="row">
+                                @@loop('./html/templates/_product-card.html', './html/json/catalog.json')
+                            </div>
                         </div>
                     </div>
                 </section>
-                <div class="benefits">
+
+                <section class="about">
                     <div class="container">
-                        <div class="benefits__body">
-                            <div class="row">
-                                @@loop('./html/templates/_benefits-card.html', './html/json/benefits.json')
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about__text">
+                                    <h2 class="about__title title-lg">Мы создаём мебель, в которой соединяются природа, форма и мастерство</h2>
+                                    <p class="about__description">Каждое изделие проходит тщательный путь от выбора массива дерева, чтобы стать частью вашего дома.</p>
+                                    <a href="#" style="text-decoration: underline; color: var(--text-primary);">Производство в Санкт-Петербурге</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__image">
+                                    <img src="@img/about.jpg" class="cover-image" alt="Фото материала производства">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <section class="features">
+                    <div class="container">
+                        <h2 class="features__title title">Почему выбирают NAMI HOME</h2>
+                        <div class="row">
+                            @@loop('./html/templates/_features-item.html', './html/json/features.json')
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about__image">
+                                    <img src="@img/birth.jpg" class="cover-image" alt="Фото материала производства">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__text">
+                                    <h2 class="about__title title-lg">Рождение мебели NAMI HOME</h2>
+                                    <p class="about__description">Мастерская в Рощино — сердце NAMI HOME. Здесь древесина превращается в мебель, каждая деталь проходит ручную обработку и контроль качества.</p>
+                                    <a href="" class="about__more more-link">Подробнее о производстве</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="products">
                     <div class="container">
                         <h2 class="products__title title">Новинки, акции и популярные товары</h2>
@@ -110,64 +117,6 @@
                         </div>
                         <div class="products__footer seo-text">
                             <p>Текстовая зона нужна для SEO. Здесь краткий небольшой текст о предлагаемом оборудовании. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="services">
-                    <div class="container">
-                        <h2 class="services__title title">Наши услуги</h2>
-                        <div class="services__body">
-                            <div class="row">
-                                @@loop('./html/templates/_service-card.html', './html/json/services.json')
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="about">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-7 col-lg-6">
-                                <h2 class="about__title title">
-                                    Компания <span class="color-accent">NEWINEX</span>
-                                </h2>
-                                <div class="about__desc">
-                                    <p>Мы — компания, созданная группой единомышленников с опытом работы в производстве систем управления. Мы работаем для того, чтобы вы всегда получали оптимальное решение вашей задачи, касающиеся сборки систем автоматизации. Обладаем для этого всеми необходимыми мощностями и сертификатами.</p>
-                                    <ul>
-                                        <li>Наши партнеры — это предприятия с высоким уровнем автоматизации, проверенным качеством и надежностью. Они были выбраны после долгих поисков и инспекции производственных площадок.</li>
-                                        <li>Вся продукция прошла доработку нашими специалистами и полностью соответствуют российским нормативам и ГОСТам.</li>
-                                        <li>Гарантируем качество комплектующих. Все устройства проходят проверку на действующем уже более шести лет предприятии ООО «ТДС».</li>
-                                    </ul>
-                                    <p>Все специалисты NEWINEX имеют опыт работы  и профильное инженерное образование. На собственном производстве мы обеспечиваем стендовые проверки каждого компонента. Вся продукция сертифицирована в соответствии с требованиями ЕЭС.</p>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-lg-6">
-                                <div class="about__licenses">
-                                    <div class="about__licenses-slider swiper">
-                                        <div class="swiper-wrapper">
-                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
-                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
-                                            </a>
-                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
-                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
-                                            </a>
-                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
-                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
-                                            </a>
-                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
-                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
-                                            </a>
-                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
-                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
-                                            </a>
-                                        </div>
-                                        <div class="about__licenses-controls">
-                                            <button type="button" class="swiper-button-prev about__licenses-prev icon-prev"></button>
-                                            <div class="about__licenses-pagination swiper-pagination"></div>
-                                            <button type="button" class="swiper-button-next about__licenses-next icon-next"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>

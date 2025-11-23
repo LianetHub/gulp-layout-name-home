@@ -1,32 +1,46 @@
 [
     {
-        "icon": "@img/icons/wrench-grey.svg",
-        "image": "@img/catalog/soft-starters.png",
-        "list": [
-            "RM-B - стандартная серия общего применения",
-            "RM-B-A - компактная серия в алюминиевом корпусе",
-            "RM-B-M - серия с расширенным функционалом",
-            "RM-B-К - универсальное УПП"
-        ],
-        "name": "Устройства плавного пуска"
+        "image": "@img/products/01.jpg",
+        "name": "Столы"
     },
     {
-        "icon": "@img/icons/flip-h-alt.svg",
-        "image": "@img/catalog/frequency-converters.png",
-        "list": [
-            "DST - стандартная серия",
-            "DST-K - серия с расширенным функционалом",
-            "DST-KM - экономичная и компактная серия"
-        ],
-        "name": "Частотные преобразователи"
+        "image": "@img/products/02.jpg",
+        "name": "Стулья"
     },
     {
-        "icon": "@img/icons/wrench-grey.svg",
-        "image": "@img/catalog/extras.png",
-        "list": [
-            "ЭМС фильтры",
-            "Тормозные резисторы"
-        ],
-        "name": "Дополнительное оборудование"
+        "image": "@img/products/03.jpg",
+        "name": "Комоды"
+    },
+    {
+        "image": "@img/products/04.jpg",
+        "name": "Консоли"
+    },
+    {
+        "image": "@img/products/05.jpg",
+        "name": "Прикроватные тумбы"
+    },
+    {
+        "image": "@img/products/06.jpg",
+        "name": "Кофейные столики"
+    },
+    {
+        "image": "@img/products/07.jpg",
+        "name": "Журнальные столики"
+    },
+    {
+        "image": "@img/products/08.jpg",
+        "name": "Буфеты"
+    },
+    {
+        "image": "@img/products/09.jpg",
+        "name": "Зеркала"
+    },
+    {
+        "image": "@img/products/10.jpg",
+        "name": "Кухни"
+    },
+    {
+        "image": "@img/products/11.jpg",
+        "name": "Гардеробы"
     }
 ]

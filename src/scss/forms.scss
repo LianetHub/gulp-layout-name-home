@@ -21,7 +21,7 @@
 		background: rgba(9, 97, 166, 0.1);
 		padding: 1rem 1.5rem;
 		min-height: rem(60);
-		color: $text;
+		color: $white;
 		font-size: 1.0625rem;
 		font-weight: 500;
 		line-height: 141.176%;
@@ -130,93 +130,69 @@
 	user-select: none;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 
-	gap: 0.25rem;
+	font-size: 1.125rem;
 	font-weight: 500;
-	padding: rem(6) rem(12);
-	border-radius: 3.125rem;
-	font-size: 0.875rem;
-	line-height: 140%;
-	min-height: rem(36);
-
-	&::before {
-		margin-right: 0.25rem;
-		width: 1em;
-		height: 1em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-shrink: 0;
-	}
+	line-height: 1.125rem;
+	letter-spacing: -0.0225rem;
+	padding: rem(25) rem(35);
 
 	&:focus-visible {
 		box-shadow: 0 0 rem(1) rem(1) $accent;
 	}
 
 	&.btn-primary {
-		border: rem(1) solid #f9851f;
-		background: #f9851f;
-		color: #1b1b1b;
+		color: $white;
+		border: rem(1) solid $accent;
+		background: $accent;
 
 		&:hover {
-			border: rem(1) solid darken($color: #f9851f, $amount: 10);
-			background: darken($color: #f9851f, $amount: 10);
+			border: rem(1) solid #27170d;
+			background: #27170d;
 		}
 		&:active {
-			border: rem(1) solid darken($color: #f9851f, $amount: 15);
-			background: darken($color: #f9851f, $amount: 15);
+			border: rem(1) solid darken($color: #27170d, $amount: 5);
+			background: darken($color: #27170d, $amount: 5);
 		}
 	}
 
-	&.btn-primary-outline {
-		border: rem(1) solid #f9851f;
-		color: #f9851f;
-
+	&.btn-light {
+		border: rem(1) solid $white;
+		background: $white;
+		color: #261509;
 		&:hover {
-			background: #f9851f;
-			color: #1b1b1b;
+			background: #996948;
+			border: rem(1) solid #996948;
+			color: #fff;
 		}
 		&:active {
-			border: rem(1) solid darken($color: #f9851f, $amount: 10);
-			background: darken($color: #f9851f, $amount: 10);
-			color: #1b1b1b;
+			border: rem(1) solid lighten($color: #996948, $amount: 5);
+			background: lighten($color: #996948, $amount: 5);
+			color: #fff;
 		}
 	}
 
-	&.btn-secondary {
-		border: rem(1) solid #3b3b3b;
-		color: #fff;
-		&::before {
-			color: $accent;
-		}
+	&.btn-light-outline {
+		border: rem(1) solid $white;
+		color: $white;
 
 		&:hover {
-			background: #3b3b3b;
+			background: $white;
+			color: #261509;
 		}
 		&:active {
-			border: rem(1) solid lighten($color: #3b3b3b, $amount: 10);
-			background: lighten($color: #3b3b3b, $amount: 10);
+			background: #996948;
+			border: rem(1) solid #996948;
+			color: #fff;
 		}
 	}
 
 	&.btn-sm {
-		font-size: 0.75rem;
-		padding: rem(12) rem(15);
-		line-height: 120%;
-		border-radius: 2.6875rem;
-	}
-
-	&.btn-lg {
-		padding: 1.125rem 3.75rem;
-		font-size: 0.875rem;
-		@media (min-width: $md2) {
-			font-size: 1rem;
-		}
+		font-size: 1.0625rem;
+		padding: rem(19) rem(23);
 	}
 
 	&:disabled,
 	&[aria-disabled="true"] {
 		pointer-events: none;
-		&::before {
-		}
 	}
 }

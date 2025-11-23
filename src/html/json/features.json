@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "@img/icons/hourglass.svg",
+        "title": "Качество, проверенное временем"
+    },
+    {
+        "icon": "@img/icons/tree.svg",
+        "title": "Дерево твёрдых пород"
+    },
+    {
+        "icon": "@img/icons/hand.svg",
+        "title": "Мастерство ручной работы"
+    },
+    {
+        "icon": "@img/icons/infinity.svg",
+        "title": "Эстетика вне времени"
+    },
+    {
+        "icon": "@img/icons/fluent_leaf-three.svg",
+        "title": "Экологичность"
+    },
+    {
+        "icon": "@img/icons/heart-outline.svg",
+        "title": "Индивидуальные решения"
+    }
+]
