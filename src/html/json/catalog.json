@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "@img/icons/wrench-grey.svg",
+        "image": "@img/catalog/soft-starters.png",
+        "list": [
+            "RM-B - стандартная серия общего применения",
+            "RM-B-A - компактная серия в алюминиевом корпусе",
+            "RM-B-M - серия с расширенным функционалом",
+            "RM-B-К - универсальное УПП"
+        ],
+        "name": "Устройства плавного пуска"
+    },
+    {
+        "icon": "@img/icons/flip-h-alt.svg",
+        "image": "@img/catalog/frequency-converters.png",
+        "list": [
+            "DST - стандартная серия",
+            "DST-K - серия с расширенным функционалом",
+            "DST-KM - экономичная и компактная серия"
+        ],
+        "name": "Частотные преобразователи"
+    },
+    {
+        "icon": "@img/icons/wrench-grey.svg",
+        "image": "@img/catalog/extras.png",
+        "list": [
+            "ЭМС фильтры",
+            "Тормозные резисторы"
+        ],
+        "name": "Дополнительное оборудование"
+    }
+]

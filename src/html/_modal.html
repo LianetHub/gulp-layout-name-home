@@ -1,0 +1,108 @@
+<div id="start" class="popup">
+    <h2 class="popup__title title">С чего начать?</h2>
+    <p class="popup__description">Оставьте свои контактные данные, и мы свяжемся с вами, чтобы обсудить, как мы можем помочь вашему ребенку.</p>
+    <form action="#" class="popup__form form">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form__field">
+                    <label for="full_name" class="form__label">Ваше имя:</label>
+                    <input type="text" name="full_name" id="full_name" class="form__control" placeholder="Иван" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form__field">
+                    <label for="phone" class="form__label">Телефон*:</label>
+                    <input type="tel" name="phone" id="phone" class="form__control" placeholder="+7 (___) ___-__-__" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label for="message" class="form__label">Коротко опишите вашу ситуацию или задайте вопрос:</label>
+                    <textarea name="message" id="message" class="form__control" rows="4" placeholder="Например: 'У нас задержка развития речи...'"></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label for="contact_time" class="form__label">Удобные часы для связи:</label>
+                    <select name="contact_time" id="contact_time" class="form__control">
+                        <option value="any">В любое время</option>
+                        <option value="morning">Утро (9:00 - 12:00)</option>
+                        <option value="afternoon">День (12:00 - 17:00)</option>
+                        <option value="evening">Вечер (17:00 - 20:00)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label class="form__checkbox">
+                        <input type="checkbox" name="agree" class="form__checkbox-input hidden" id="agree_terms" required>
+                        <span class="form__checkbox-text">Я даю согласие на <a href="/privacy-policy.html" target="_blank">обработку персональных данных</a></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="form__btn btn btn-primary">Отправить заявку</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="contact" class="popup">
+    <h2 class="popup__title title">Связаться</h2>
+    <p class="popup__description">Оставьте свои контактные данные, и мы ответим на все ваши вопросы.</p>
+    <form action="#" class="popup__form form">
+        <div class="row">
+            <div class="col-6">
+                <div class="form__field">
+                    <label for="full_name" class="form__label">Ваше имя:</label>
+                    <input type="text" name="full_name" id="full_name" class="form__control" placeholder="Иван" required>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form__field">
+                    <label for="phone" class="form__label">Телефон*:</label>
+                    <input type="tel" name="phone" id="phone" class="form__control" placeholder="+7 (___) ___-__-__" required>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label for="message" class="form__label">Коротко опишите вашу ситуацию или задайте вопрос:</label>
+                    <textarea name="message" id="message" class="form__control" rows="4" placeholder="Например: 'Хочу записаться на АВА-терапию...'"></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label for="contact_method" class="form__label">Удобный способ связи:</label>
+                    <select name="contact_method" id="contact_method" class="form__control">
+                        <option value="phone">Телефон</option>
+                        <option value="telegram">Telegram</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="vk">ВКонтакте</option>
+                        <option value="email">E-mail</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label for="contact_time" class="form__label">Удобные часы для связи:</label>
+                    <select name="contact_time" id="contact_time" class="form__control">
+                        <option value="any">В любое время</option>
+                        <option value="morning">Утро (9:00 - 12:00)</option>
+                        <option value="afternoon">День (12:00 - 17:00)</option>
+                        <option value="evening">Вечер (17:00 - 20:00)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form__field">
+                    <label class="form__checkbox">
+                        <input type="checkbox" name="agree" class="form__checkbox-input hidden" id="agree_terms" required>
+                        <span class="form__checkbox-text">Я даю согласие на <a href="/privacy-policy.html" target="_blank">обработку персональных данных</a></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="form__btn btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </form>
+</div>

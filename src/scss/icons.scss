@@ -1,0 +1,71 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	speak: never;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+.icon-cross:before {
+	content: "\e910";
+}
+.icon-align-left:before {
+	content: "\e90f";
+}
+.icon-phone:before {
+	content: "\e90e";
+}
+.icon-align:before {
+	content: "\e900";
+}
+.icon-balance-scale:before {
+	content: "\e901";
+}
+.icon-book-open:before {
+	content: "\e902";
+}
+.icon-chevron-down:before {
+	content: "\e903";
+}
+.icon-comment-question:before {
+	content: "\e904";
+}
+.icon-next:before {
+	content: "\e905";
+}
+.icon-prev:before {
+	content: "\e906";
+}
+.icon-search:before {
+	content: "\e907";
+}
+.icon-shopping-cart:before {
+	content: "\e908";
+}
+.icon-telegram:before {
+	content: "\e909";
+}
+.icon-telegram-rounded:before {
+	content: "\e90a";
+}
+.icon-whatsapp:before {
+	content: "\e90b";
+}
+.icon-whatsapp-rounded:before {
+	content: "\e90c";
+}
+.icon-window-restore:before {
+	content: "\e90d";
+}

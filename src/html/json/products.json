@@ -1,0 +1,74 @@
+[
+    {
+        "id": "9000001",
+        "image": "@img/products/01.png",
+        "label": "Хит продаж",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "amperage": "1.5 А",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000002",
+        "image": "@img/products/02.png",
+        "label": "Новинка",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "amperage": "1.5 А",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000003",
+        "image": "@img/products/03.png",
+        "label": "Хит продаж",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "amperage": "1.5 А",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000004",
+        "image": "@img/products/04.png",
+        "label": "Акция",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "resistance": "11 Ом",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000005",
+        "image": "@img/products/05.png",
+        "label": "Хит продаж",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "amperage": "1.5 А",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000006",
+        "image": "@img/products/06.png",
+        "label": "Новинка",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "amperage": "1.5 А",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000007",
+        "image": "@img/products/07.png",
+        "label": "Хит продаж",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "amperage": "1.5 А",
+        "price": "12 101 ₽"
+    },
+    {
+        "id": "9000008",
+        "image": "@img/products/08.png",
+        "label": "Акция",
+        "name": "SRM-B-0,75 устройство плавного пуска",
+        "power": "0,75 кВт",
+        "resistance": "11 Ом",
+        "price": "12 101 ₽"
+    }
+]

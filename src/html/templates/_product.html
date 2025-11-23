@@ -1,0 +1,47 @@
+<div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="product" id="@@id">
+        <div class="product__header">
+            <div class="product__header-row">
+                <div class="product__label">@@label</div>
+                <button type="button" class="product__compare icon-balance-scale"></button>
+            </div>
+            <a href="" class="product__image">
+                <img src="@@image" alt="Фото товара">
+            </a>
+        </div>
+        <div class="product__body">
+            <a href="" class="product__name">@@name</a>
+            <ul class="product__stats">
+                <li class="product__stats-item">
+                    <div class="product__stats-icon">
+                        <img src="@img/icons/power.svg" alt="Иконка">
+                    </div>
+                    <div class="product__stats-property">Мощность:</div>
+                    <div class="product__stats-value">@@power</div>
+                </li>
+                @@if (typeof amperage !== 'undefined') {
+                <li class="product__stats-item">
+                    <div class="product__stats-icon">
+                        <img src="@img/icons/amperage.svg" alt="Иконка">
+                    </div>
+                    <div class="product__stats-property">Ток:</div>
+                    <div class="product__stats-value">@@amperage</div>
+                </li>
+                }
+                @@if (typeof resistance !== 'undefined') {
+                <li class="product__stats-item">
+                    <div class="product__stats-icon">
+                        <img src="@img/icons/amperage.svg" alt="Иконка">
+                    </div>
+                    <div class="product__stats-property">Сопротивление:</div>
+                    <div class="product__stats-value">@@resistance</div>
+                </li>
+                }
+            </ul>
+        </div>
+        <div class="product__footer">
+            <div class="product__price">@@price</div>
+            <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
+        </div>
+    </div>
+</div>
