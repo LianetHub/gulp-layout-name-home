@@ -6,16 +6,16 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Onest";
-  src: url("../fonts/Onest-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Onest-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Onest-VariableFont_wght.woff") format("woff");
+  font-family: "Lora";
+  src: url("../fonts/Lora-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Lora-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Lora-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Lora";
-  src: url("../fonts/Lora-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Lora-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Lora-VariableFont_wght.woff") format("woff");
+  font-family: "Onest";
+  src: url("../fonts/Onest-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Onest-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Onest-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -68,7 +68,7 @@ body {
   min-width: 20rem;
   min-height: 100%;
   line-height: normal;
-  background: #e6e0d7;
+  background: url("../img/noise.svg") 0 0/cover no-repeat, #e6e0d7;
   color: #60371b;
   margin-right: 0 !important;
 }
@@ -1052,11 +1052,19 @@ body {
 }
 
 .more-link {
+  display: inline-block;
+  width: fit-content;
   font-size: 1rem;
   font-weight: 500;
   line-height: 106.25%;
   letter-spacing: -0.02rem;
   border-bottom: 0.0625rem solid rgba(77, 44, 22, 0.5);
+  transition: border-bottom-color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .more-link:hover {
+    border-bottom-color: transparent;
+  }
 }
 
 .color-accent {
@@ -1502,7 +1510,7 @@ body {
 .categories .row {
   margin: 0 -0.625rem;
 }
-.categories .row .col-md-4 {
+.categories .row > * {
   padding: 0 0.625rem;
 }
 .categories__card {
@@ -1586,6 +1594,29 @@ body {
 }
 .catalog__body {
   margin-top: 2rem;
+}
+.catalog__body .row {
+  margin: 0 -0.625rem;
+  row-gap: 2.5rem;
+}
+.catalog__body .row > * {
+  padding: 0 0.625rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+.product-card__name {
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  line-height: 1;
+  letter-spacing: -0.025rem;
+}
+.product-card__more {
+  margin-top: 0.625rem;
 }
 
 .products {
@@ -1741,4 +1772,88 @@ body {
 }
 .product__add-to-cart.btn {
   padding: 0.6875rem 1.875rem;
+}
+
+.about {
+  padding: 3.75rem 0;
+}
+.about .row {
+  align-items: center;
+  margin: 0 -3rem;
+  row-gap: 1.25rem;
+}
+.about .row > * {
+  padding: 0 3rem;
+}
+.about__text {
+  max-width: 47.625rem;
+}
+.about__description {
+  margin-top: 0.875rem;
+  color: rgba(30, 30, 30, 0.8);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: -0.025rem;
+}
+.about__production {
+  margin-top: 3.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about__production-icon {
+  width: 3.375rem;
+  height: 3.375rem;
+  flex-shrink: 0;
+  border: 0.0625rem solid rgba(77, 44, 22, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.about__production-text {
+  color: #1e1e1e;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025rem;
+  max-width: 12rem;
+}
+.about__more {
+  margin-top: 1.875rem;
+}
+
+.features {
+  padding: 3.75rem 0;
+}
+.features .row {
+  margin: 0 -0.625rem;
+  row-gap: 1.25rem;
+}
+.features .row > * {
+  padding: 0 0.625rem;
+}
+.features__title {
+  margin-bottom: 2.5rem;
+}
+.features__item {
+  border-radius: 0.25rem;
+  border: 0.0625rem solid rgba(77, 44, 22, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.375rem 3.125rem;
+  border-radius: 0.25rem;
+}
+.features__item-icon {
+  flex: 0 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features__item-text {
+  color: #1e1e1e;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
 }

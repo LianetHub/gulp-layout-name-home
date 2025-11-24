@@ -4,7 +4,7 @@ body {
 	min-width: rem(320);
 	min-height: 100%;
 	line-height: normal;
-	background: #e6e0d7;
+	background: url("@img/noise.svg") 0 0 / cover no-repeat, #e6e0d7;
 	color: #60371b;
 	margin-right: 0 !important;
 	&.lock-menu {
