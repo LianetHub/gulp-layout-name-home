@@ -1,74 +1,74 @@
 [
     {
         "id": "9000001",
-        "image": "@img/products/01.png",
+        "image": "@img/products/01.jpg",
         "label": "Хит продаж",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "amperage": "1.5 А",
-        "price": "12 101 ₽"
+        "name": "Прикроватная тумба «Roshi» из массива дуба",
+        "power": "Массив дуба",
+        "amperage": "Ручная обработка",
+        "price": "34 900 ₽"
     },
     {
         "id": "9000002",
-        "image": "@img/products/02.png",
+        "image": "@img/products/02.jpg",
         "label": "Новинка",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "amperage": "1.5 А",
-        "price": "12 101 ₽"
+        "name": "Кофейный столик «Linea» в сканди минимализме",
+        "power": "Дуб / ясень",
+        "amperage": "Авторский дизайн",
+        "price": "28 700 ₽"
     },
     {
         "id": "9000003",
-        "image": "@img/products/03.png",
+        "image": "@img/products/03.jpg",
         "label": "Хит продаж",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "amperage": "1.5 А",
-        "price": "12 101 ₽"
+        "name": "Стул «Forma» из массива с мягким сиденьем",
+        "power": "Натуральное дерево",
+        "amperage": "Эргономичная форма",
+        "price": "22 400 ₽"
     },
     {
         "id": "9000004",
-        "image": "@img/products/04.png",
+        "image": "@img/products/04.jpg",
         "label": "Акция",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "resistance": "11 Ом",
-        "price": "12 101 ₽"
+        "name": "Журнальный стол «Nordic» с фигурной кромкой",
+        "power": "Массив ясень",
+        "resistance": "Ручная шлифовка",
+        "price": "31 900 ₽"
     },
     {
         "id": "9000005",
-        "image": "@img/products/05.png",
+        "image": "@img/products/05.jpg",
         "label": "Хит продаж",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "amperage": "1.5 А",
-        "price": "12 101 ₽"
+        "name": "Комод «SilentWood» с плавными фасадами",
+        "power": "Дуб премиум-сортировки",
+        "amperage": "Безупречная геометрия",
+        "price": "67 500 ₽"
     },
     {
         "id": "9000006",
-        "image": "@img/products/06.png",
+        "image": "@img/products/06.jpg",
         "label": "Новинка",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "amperage": "1.5 А",
-        "price": "12 101 ₽"
+        "name": "Консоль «Edge» для холла или гостиной",
+        "power": "Массив + натуральное масло",
+        "amperage": "Минималистичная форма",
+        "price": "39 100 ₽"
     },
     {
         "id": "9000007",
-        "image": "@img/products/07.png",
+        "image": "@img/products/07.jpg",
         "label": "Хит продаж",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "amperage": "1.5 А",
-        "price": "12 101 ₽"
+        "name": "Буфет «Heritage» с витринными дверцами",
+        "power": "Дуб / стекло",
+        "amperage": "Ремесленное изготовление",
+        "price": "89 900 ₽"
     },
     {
         "id": "9000008",
-        "image": "@img/products/08.png",
+        "image": "@img/products/08.jpg",
         "label": "Акция",
-        "name": "SRM-B-0,75 устройство плавного пуска",
-        "power": "0,75 кВт",
-        "resistance": "11 Ом",
-        "price": "12 101 ₽"
+        "name": "Зеркало настенное «Aura» в массивной раме",
+        "power": "Рама: дуб",
+        "resistance": "Защитное покрытие",
+        "price": "24 900 ₽"
     }
 ]

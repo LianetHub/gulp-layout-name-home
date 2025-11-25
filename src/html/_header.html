@@ -2,10 +2,13 @@
     <div class="header__top">
         <div class="container">
             <div class="header__main">
+                <button type="button" class="header__menu-toggler icon-menu">
+                    <span></span><span></span><span></span>
+                </button>
                 <a href="/" class="header__logo">NAMI HOME</a>
-                <a href="tel:+79219139099" class="header__phone icon-phone">+7 (921) 913 9099</a>
-                <a href="mailto:info@stolerbear.ru" class="header__phone icon-envelope">info@stolerbear.ru</a>
-                <address class="header__address icon-location">Озерки, Первомайское поселение</address>
+                <a href="tel:+79219139099" class="header__phone icon-phone"><span>+7 (921) 913 9099</span></a>
+                <a href="mailto:info@stolerbear.ru" class="header__email icon-envelope"><span>info@stolerbear.ru</span></a>
+                <address class="header__address icon-location"><span>Озерки, Первомайское поселение</span></address>
             </div>
         </div>
     </div>
@@ -16,24 +19,61 @@
                     <a href="" class="menu__link">предметная мебель</a>
                     <button type="button" class="menu__arrow icon-chevron-down"></button>
                     <div class="submenu">
-
+                        <div class="submenu__products">
+                            @@loop('./templates/_submenu-product.html', './html/json/catalog.json')
+                        </div>
                     </div>
                 </li>
                 <li class="menu__item menu__item--parent">
                     <a href="" class="menu__link">мебель на заказ</a>
                     <button type="button" class="menu__arrow icon-chevron-down"></button>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="" class="submenu__link">Индивидуальные проекты</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Корпусная мебель</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Кухни</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Гардеробные</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Проектирование и замеры</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item menu__item--parent">
                     <a href="" class="menu__link">дизайнеры</a>
                     <button type="button" class="menu__arrow icon-chevron-down"></button>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="" class="submenu__link">Сотрудничество</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Партнёрская программа</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Материалы и 3D модели</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Портфолио проектов</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item menu__item--parent">
                     <a href="" class="menu__link">о бренде</a>
                     <button type="button" class="menu__arrow icon-chevron-down"></button>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="" class="submenu__link">История</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Производство и материалы</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Философия</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Команда</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item menu__item--parent">
                     <a href="" class="menu__link">покупателям</a>
                     <button type="button" class="menu__arrow icon-chevron-down"></button>
+                    <div class="submenu">
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="" class="submenu__link">Доставка</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Оплата</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Гарантия</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Возврат и обмен</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">Уход за изделиями</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link">FAQ</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="menu__item">
                     <a href="" class="menu__link">контакты</a>
@@ -41,4 +81,5 @@
             </ul>
         </div>
     </nav>
+    <div class="header__overlay"></div>
 </header>

@@ -58,14 +58,21 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 //=======================================
 
 .hero {
-	min-height: rem(1024);
 	background: linear-gradient(0deg, rgba(21, 12, 7, 0) 2.96%, rgba(6, 3, 2, 0.8) 98.33%), url("@img/hero.jpg") center / cover no-repeat, $accent;
 
 	color: $white;
-	padding: 12.6rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	padding: rem(260) 0 rem(60);
+	min-height: 100svh;
+	@media (min-width: $md3) {
+		min-height: rem(729);
+	}
+	@media (min-width: $md0) {
+		padding: 12.6rem 0;
+		min-height: rem(1024);
+	}
 	.container {
 		width: 100%;
 	}
@@ -75,15 +82,21 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .hero__features
 	&__features {
-		font-size: 1.25rem;
 		line-height: 1;
 		letter-spacing: -0.025rem;
 		display: flex;
 		gap: rem(4);
+		font-size: 1.125rem;
+		@media (min-width: $md3) {
+			font-size: 1.25rem;
+		}
 	}
 	// .hero__feature
 	&__feature {
-		padding: 0.625rem 1.5rem;
+		padding: rem(6) 1.25rem;
+		@media (min-width: $md4) {
+			padding: 0.625rem 1.5rem;
+		}
 		&:first-child {
 			padding-left: 0;
 		}
@@ -96,24 +109,50 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .hero__title
 	&__title {
-		margin-top: 2.75rem;
 		font-family: $font-lora;
-		font-size: 3.875rem;
 		font-weight: 400;
-		line-height: 1;
-		letter-spacing: -0.19375rem;
+		line-height: 1.1;
+		letter-spacing: -0.16875rem;
+		text-align: center;
+		font-size: rem(34);
+		margin-top: rem(24);
+		@media (min-width: $md4) {
+			margin-top: 2rem;
+			text-align: left;
+			font-size: 3.375rem;
+		}
+		@media (min-width: $md0) {
+			margin-top: 2.75rem;
+			letter-spacing: -0.19375rem;
+			line-height: 1;
+			font-size: 3.875rem;
+		}
 	}
 	// .hero__footer
 	&__footer {
-		margin-top: 2.75rem;
 		display: flex;
-		align-items: center;
+		flex-direction: column;
 		gap: rem(30);
+		margin-top: rem(24);
+		@media (min-width: $md4) {
+			margin-top: rem(34);
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+		@media (min-width: $md0) {
+			margin-top: 2.75rem;
+		}
 	}
 	// .hero__btns
 	&__btns {
 		display: flex;
-		gap: 1rem;
+		flex-direction: column;
+		gap: rem(10);
+		@media (min-width: $md4) {
+			gap: 1rem;
+			flex-direction: row;
+		}
 	}
 	// .hero__btn
 	&__btn {
@@ -145,9 +184,16 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 }
 
 .categories {
-	padding: 7.5rem 0 rem(65);
+	padding: rem(50) 0 rem(26);
+	@media (min-width: $md4) {
+		padding: 6.25rem 0 rem(50);
+	}
+	@media (min-width: $md0) {
+		padding: 7.5rem 0 rem(65);
+	}
 	.row {
 		margin: 0 rem(-10);
+		row-gap: rem(10);
 		& > * {
 			padding: 0 rem(10);
 		}
@@ -208,20 +254,29 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 		left: 0;
 		right: 0;
 		color: $white;
-		padding: rem(0) rem(42) rem(50);
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		gap: 1.25rem;
 		z-index: 3;
+		padding: rem(0) rem(30) rem(30);
+		@media (min-width: $md0) {
+			padding: rem(0) rem(42) rem(50);
+			align-items: flex-start;
+		}
 	}
 	// .categories__card-name
 	&__card-name {
 		font-family: $font-lora;
-		font-size: 2rem;
 		font-weight: 500;
 		line-height: 1.25;
 		letter-spacing: -0.04rem;
+		text-align: center;
+		font-size: 1.625rem;
+		@media (min-width: $md0) {
+			font-size: 2rem;
+			text-align: left;
+		}
 	}
 	// .categories__card-btn
 	&__card-btn {
@@ -229,29 +284,55 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 }
 
 .catalog {
-	padding: rem(65) 0;
+	padding: rem(26) 0;
+	@media (min-width: $md4) {
+		padding: rem(50) 0;
+	}
+	@media (min-width: $md0) {
+		padding: rem(65) 0;
+	}
 	// .catalog__header
 	&__header {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		gap: 0.25rem;
+		@media (min-width: $md4) {
+			justify-content: space-between;
+			flex-direction: row;
+			text-align: left;
+		}
 	}
 	// .catalog__title
 	&__title {
 	}
 	// .catalog__logo
 	&__logo {
-		color: #1e1e1e;
-		font-family: $font-ultra;
-		font-size: 3.75rem;
-		line-height: 1;
+		@media (max-width: $md4) {
+			font-family: Lora;
+			font-size: 1.875rem;
+			letter-spacing: -0.0375rem;
+		}
+		@media (min-width: $md4) {
+			color: #1e1e1e;
+			font-family: $font-ultra;
+			font-size: 3.75rem;
+			line-height: 1;
+		}
 	}
 	// .catalog__body
 	&__body {
-		margin-top: 2rem;
+		margin-top: 1.5rem;
+		@media (min-width: $md4) {
+			margin-top: 2rem;
+		}
 		.row {
 			margin: 0 rem(-10);
-			row-gap: rem(40);
+			row-gap: rem(30);
+			@media (min-width: $md4) {
+				row-gap: rem(40);
+			}
 			& > * {
 				padding: 0 rem(10);
 			}
@@ -264,28 +345,55 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	flex-direction: column;
 	// .product-card__poster
 	&__poster {
+		overflow: hidden;
+		aspect-ratio: math.div(415, 456);
+		& img {
+			transition: transform 0.3s ease;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				& img {
+					transform: scale(1.015);
+				}
+			}
+		}
 	}
 	// .product-card__name
 	&__name {
-		margin-top: 1.25rem;
-		font-size: 1.25rem;
 		font-weight: 500;
 		color: #1e1e1e;
 		line-height: 1;
 		letter-spacing: -0.025rem;
+		transition: color 0.3s ease;
+		margin-top: 1rem;
+		font-size: 1.125rem;
+		@media (min-width: $md4) {
+			font-size: 1.25rem;
+			margin-top: 1.25rem;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: #996948;
+			}
+		}
 	}
 	// .product-card__more
 	&__more {
-		margin-top: rem(10);
+		margin-top: rem(8);
+		@media (min-width: $md4) {
+			margin-top: rem(16);
+		}
+		& span {
+			@media (max-width: $md4) {
+				display: none;
+			}
+		}
 	}
 }
 
 .products {
 	padding: rem(40) 0;
-	display: none;
-	@media (min-width: $md4) {
-		display: block;
-	}
+
 	@media (min-width: $md3) {
 		padding: rem(60) 0;
 	}
@@ -325,16 +433,17 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	display: flex;
 	flex-direction: column;
 	border-radius: 1.25rem;
-	background: #262626;
+	background: #fff;
 	// .product__header
 	&__header {
 		background: #fff;
-		height: 13.375rem;
+		aspect-ratio: 4 / 3;
 		border-radius: 1.25rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		position: relative;
+		overflow: hidden;
 	}
 	// .product__header-row
 	&__header-row {
@@ -351,8 +460,8 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	// .product__label
 	&__label {
 		border-radius: 3.125rem;
-		background: #3b3b3b;
-		color: #898989;
+		background: $accent;
+		color: #fff;
 		text-align: center;
 		font-size: 0.75rem;
 		font-weight: 500;
@@ -382,13 +491,8 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	// .product__image
 	&__image {
 		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 1.25rem;
+		width: 100%;
 		& img {
-			max-height: 100%;
-			width: auto;
 			transition: transform 0.3s ease;
 		}
 		@media (any-hover: hover) {
@@ -423,6 +527,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	&__stats-item {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 0.25rem;
 		&:not(:last-child) {
 			margin-bottom: 0.5rem;
@@ -430,8 +535,8 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .product__stats-icon
 	&__stats-icon {
-		width: 1rem;
-		height: 1rem;
+		width: 1.5rem;
+		height: 1.5rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -447,6 +552,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .product__footer
 	&__footer {
+		margin-top: auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -467,39 +573,95 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 }
 
 .about {
-	padding: rem(60) 0;
+	padding: rem(26) 0;
+	@media (min-width: $md4) {
+		padding: rem(50) 0;
+	}
+	@media (min-width: $md0) {
+		padding: rem(60) 0;
+	}
 	.row {
 		align-items: center;
-		margin: 0 rem(-48);
-		row-gap: rem(20);
-		& > * {
-			padding: 0 rem(48);
+		@media (max-width: $md4) {
+			display: contents;
 		}
+		& > * {
+			@media (max-width: $md4) {
+				display: contents;
+			}
+		}
+		@media (min-width: $md4) {
+			margin: 0 rem(-12);
+			row-gap: rem(20);
+			& > * {
+				padding: 0 rem(12);
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
 	}
 	// .about__text
 	&__text {
-		max-width: rem(762);
+		display: contents;
+		@media (min-width: $md4) {
+			display: block;
+		}
+		@media (min-width: $md2) {
+			max-width: 32rem;
+		}
+		@media (min-width: $md0) {
+			max-width: 43rem;
+		}
+		&--centered {
+			margin: 0 auto;
+		}
 	}
 	// .about__title
 	&__title {
+		order: -2;
+		text-align: center;
+		@media (min-width: $md4) {
+			text-align: left;
+		}
 	}
 	// .about__description
 	&__description {
 		margin-top: rem(14);
-		color: rgba(30, 30, 30, 0.8);
-		font-size: 1.25rem;
 		line-height: 1.5;
 		letter-spacing: -0.025rem;
+		text-align: center;
+		font-size: 1rem;
+		color: rgba(30, 30, 30, 1);
+		@media (min-width: $md4) {
+			color: rgba(30, 30, 30, 0.8);
+			font-size: 1.125rem;
+			text-align: left;
+		}
+		@media (min-width: $md0) {
+			font-size: 1.25rem;
+		}
 	}
 	// .about__image
 	&__image {
+		order: -1;
+		margin-top: rem(20);
+		@media (min-width: $md4) {
+			margin-top: 0;
+		}
 	}
 	// .about__production
 	&__production {
-		margin-top: rem(60);
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		margin-top: rem(24);
+		justify-content: center;
+		@media (min-width: $md4) {
+			justify-content: flex-start;
+			margin-top: rem(60);
+		}
 	}
 	// .about__production-icon
 	&__production-icon {
@@ -523,12 +685,23 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .about__more
 	&__more {
-		margin-top: rem(30);
+		align-self: center;
+		margin-top: rem(12);
+		@media (min-width: $md4) {
+			align-self: flex-start;
+			margin-top: rem(30);
+		}
 	}
 }
 
 .features {
-	padding: rem(60) 0;
+	padding: rem(26) 0;
+	@media (min-width: $md4) {
+		padding: rem(50) 0;
+	}
+	@media (min-width: $md0) {
+		padding: rem(60) 0;
+	}
 	.row {
 		margin: 0 rem(-10);
 		row-gap: rem(20);
@@ -539,29 +712,64 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	// .features__title
 	&__title {
 		margin-bottom: 2.5rem;
+		text-align: center;
+		@media (min-width: $md4) {
+			text-align: left;
+		}
 	}
 	// .features__item
 	&__item {
 		border-radius: 0.25rem;
 		border: rem(1) solid rgba(77, 44, 22, 0.2);
 		display: flex;
-		align-items: center;
-		gap: 2rem;
-		padding: rem(38) rem(50);
 		border-radius: 0.25rem;
+		height: 100%;
+		gap: 1.5rem;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 1.25rem;
+		min-height: 11.5625rem;
+		@media (min-width: $md3) {
+			min-height: 100%;
+			padding: rem(38) rem(30);
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: row;
+		}
+		@media (min-width: $md0) {
+			gap: 2rem;
+			padding: rem(38) rem(50);
+		}
 	}
 	// .features__item-icon
 	&__item-icon {
-		flex: 0 0 rem(64);
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 2.25rem;
+		height: 2.25rem;
+		flex-shrink: 0;
+		@media (min-width: $md4) {
+			width: rem(54);
+			height: rem(54);
+		}
+		@media (min-width: $md0) {
+			width: rem(64);
+			height: rem(64);
+		}
 	}
 	// .features__item-text
 	&__item-text {
 		color: #1e1e1e;
-		font-size: 1.25rem;
 		font-weight: 500;
 		line-height: 1.3;
+		font-size: 0.9375rem;
+		@media (min-width: $md4) {
+			font-size: 1.125rem;
+		}
+		@media (min-width: $md0) {
+			font-size: 1.25rem;
+		}
 	}
 }

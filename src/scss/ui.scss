@@ -5,16 +5,29 @@
 
 .title-lg {
 	font-family: $font-lora;
-	font-size: 4.125rem;
-	line-height: 106.061%;
-	letter-spacing: -0.20625rem;
+	font-size: 1.875rem;
+	letter-spacing: -0.0375rem;
+	line-height: 120%;
+	@media (min-width: $md4) {
+		line-height: 106.061%;
+		letter-spacing: -0.15625rem;
+		font-size: rem(50);
+	}
+	@media (min-width: $md0) {
+		letter-spacing: -0.20625rem;
+		font-size: 4.125rem;
+	}
 }
 
 .title {
 	font-family: $font-lora;
-	font-size: 2.875rem;
 	line-height: 108.696%;
-	letter-spacing: -0.14375rem;
+	font-size: rem(30);
+	letter-spacing: -0.0375rem;
+	@media (min-width: $md4) {
+		letter-spacing: -0.14375rem;
+		font-size: 2.875rem;
+	}
 }
 
 .more-link {
