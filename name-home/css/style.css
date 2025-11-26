@@ -7,12 +7,11 @@
 }
 
 @font-face {
-  font-family: "Lora";
-  src: url("../fonts/Lora-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Lora-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Lora-VariableFont_wght.woff") format("woff");
-  font-weight: 100 900;
-  font-stretch: 75% 125%;
-  font-style: normal;
+  font-family: "UltraCondensedSansSerif";
   font-display: swap;
+  src: url("../fonts/UltraCondensedSansSerif-Regular.woff2") format("woff2"), url("../fonts/UltraCondensedSansSerif-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -25,11 +24,12 @@
 }
 
 @font-face {
-  font-family: "UltraCondensedSansSerif";
-  font-display: swap;
-  src: url("../fonts/UltraCondensedSansSerif-Regular.woff2") format("woff2"), url("../fonts/UltraCondensedSansSerif-Regular.woff") format("woff");
-  font-weight: 400;
+  font-family: "Lora";
+  src: url("../fonts/Lora-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Lora-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Lora-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
   font-style: normal;
+  font-display: swap;
 }
 
 [class^=icon-]:before,
@@ -110,12 +110,20 @@ body {
   z-index: 6;
 }
 
-.header.header--absolute {
-  position: absolute;
+.header.header--fixed {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   color: #e6e0d7;
+}
+
+.header.scroll .header__overlay {
+  opacity: 1 !important;
+}
+
+.header.submenu-open {
+  background: transparent;
 }
 
 .header.submenu-open .header__overlay {
@@ -2188,10 +2196,6 @@ body {
             flex: 0 0 auto;
   }
 
-  .hero {
-    min-height: 45.5625rem;
-  }
-
   .hero__features {
     font-size: 1.25rem;
   }
@@ -2658,6 +2662,21 @@ body {
         -ms-flex-align: center;
             align-items: center;
     border: 0.0625rem solid rgba(255, 255, 255, 0.2);
+  }
+
+  .header__address.is-active span {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    color: #60371b;
+    z-index: 100;
+    min-width: 200px;
+    text-align: center;
   }
 
   .header__address span {

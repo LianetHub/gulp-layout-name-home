@@ -1,6 +1,5 @@
 "use strict";
 
-//  Fancybox
 if (typeof Fancybox !== "undefined" && Fancybox !== null) {
     Fancybox.bind("[data-fancybox]", {
         dragToClose: false
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const overlay = document.querySelector('.header__overlay');
     const menuParents = document.querySelectorAll('.menu__item--parent');
+    const headerAddress = document.querySelector('.header__address');
 
     function openOverlay(submenu) {
         header.classList.add('submenu-open');
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closeOverlay() {
         header.classList.remove('submenu-open');
-        overlay.style.height = '0px';
+        overlay.style.height = `${header.offsetHeight}px`;
     }
 
     function closeAllMenus() {
@@ -39,6 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         closeOverlay();
     }
+
+    function checkScroll() {
+        if (window.scrollY > 0) {
+            header.classList.add('scroll');
+        } else {
+            header.classList.remove('scroll');
+        }
+    }
+
+    checkScroll();
 
     if (window.matchMedia('(any-hover: hover)').matches) {
         menuParents.forEach(parent => {
@@ -108,6 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 openOverlay(subMenu);
             }
         }
+
+        if (headerAddress && target.closest('.header__address')) {
+            if (!window.matchMedia('(any-hover: hover)').matches) {
+                headerAddress.classList.toggle('is-active');
+            }
+        } else if (headerAddress && headerAddress.classList.contains('is-active')) {
+            headerAddress.classList.remove('is-active');
+        }
     });
 
     window.addEventListener('resize', () => {
@@ -116,5 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('open-menu');
             body.classList.remove('lock-menu');
         }
+        if (headerAddress) {
+            headerAddress.classList.remove('is-active');
+        }
     });
+
+    window.addEventListener('scroll', checkScroll);
 });

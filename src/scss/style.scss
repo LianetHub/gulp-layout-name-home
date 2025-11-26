@@ -66,9 +66,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	justify-content: flex-end;
 	padding: rem(260) 0 rem(60);
 	min-height: 100svh;
-	@media (min-width: $md3) {
-		min-height: rem(729);
-	}
+
 	@media (min-width: $md0) {
 		padding: 12.6rem 0;
 		min-height: rem(1024);
